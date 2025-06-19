@@ -669,12 +669,13 @@
               <button class="btn" id="navbar-auth-btn">Login</button>
             </li>
             <li class="nav-item">
-              <a class="btn" href="#">Join Us</a>
+              <button class="btn" id="joinBtn">Join Us</button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <p id="joinMessage" style="text-align:center; color: green; font-weight: bold; margin-top: 10px;"></p>
 
     <!-- Hero Section with Carousel -->
     <section class="hero-section" id="home">
@@ -722,9 +723,7 @@
                 >
                   Explore Events
                 </button>
-                <button class="btn hero-btn hero-btn-outline">
-                  Join Our Community
-                </button>
+                <button class="btn hero-btn hero-btn-outline" id="communityBtn">Join Our Community</button>
               </div>
             </div>
           </div>
@@ -1518,5 +1517,17 @@
             .scrollIntoView({ behavior: "smooth" });
         });
     </script>
+
+    <script>
+  function showJoinMessage(event) {
+    event.preventDefault();
+    document.getElementById("joinMessage").innerText = "Team formation for this chapter has been completed.";
+  }
+
+  document.getElementById("joinBtn").addEventListener("click", showJoinMessage);
+  document.getElementById("communityBtn").addEventListener("click", showJoinMessage);
+</script>
+
+
   </body>
 </html>
