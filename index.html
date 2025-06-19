@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+1<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -1047,28 +1047,8 @@
             </div>
         </div>
     </section>
-                                
-                                <script>
-                                document.addEventListener("DOMContentLoaded", function () {
-                                    const teamTabs = document.querySelectorAll(".team-tab");
-                                    const teamSections = document.querySelectorAll(".team-section");
-                                    
-                                    teamTabs.forEach(tab => {
-                                        tab.addEventListener("click", function () {
-                                            const selectedTeam = this.getAttribute("data-team");
-                                            
-                                            teamSections.forEach(section => {
-                                                section.style.display = "none";
-                                            });
-                                            
-                                            teamTabs.forEach(button => {
-                                                button.classList.remove("active");
-                                            });
-                                            
-                                            document.getElementById(selectedTeam).style.display = "flex";
-                                            this.classList.add("active");
-                                        });
-                                    });
-                                });
-                                </script>
-                                
+                                <!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
